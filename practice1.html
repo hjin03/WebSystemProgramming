@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyejin's world</title>
+    <style>
+        #title{
+            /* text-align: center; */
+            display:flex;
+            justify-content:center;
+            font-family:"Verdana","Times New Roman",non-serif;
+            color:rgb(234, 77, 71);
+        }
+
+        body{
+     
+        }
+        .a{
+            margin-bottom:0;
+            list-style:none;
+            text-align:center;
+            border-top:1px solid palevioletred;
+            border-bottom:1px solid palevioletred;
+            padding:10px 0;
+        }
+        .a li{
+            text-transform:uppercase;
+            padding:0 10px;  
+            display:inline;
+            letter-spacing:10px;
+        }
+        .a li a{
+            text-decoration: none;
+            color:black;
+        }
+        .a li a:hover{
+            text-decoration: underline;
+            text-decoration-color: pink;
+        }
+        #pp{
+            display:flex;
+            justify-content:center;
+            margin-top:50px;
+        }
+
+        #tb {
+            margin:20px;
+            border:2px solid pink;
+            border-collapse:collapse;
+            background-color:rgb(242, 242, 255);
+
+        }
+
+        #tb th{
+            border-bottom: 2px solid pink;
+            background-color: pink;
+        }
+        #tb td{
+            width:50px;
+            text-align: center;
+        }
+        .cl{
+            background-color: rgb(255, 229, 238);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome To My World!</h1>
+    </header>
+    <div>
+        <ul class="a">
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Codes</a></li>
+        </ul>
+    </div>
+    <div id="pp">            
+        <table id="tb" border="1">
+            <caption>시간표</caption>
+            <tr>
+                <td>T</td>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td rowspan="3" class="cl">마케팅</td>
+                <td rowspan="10"></td>
+                <td rowspan="4"></td>
+                <td rowspan="6"></td>
+                <td rowspan="5"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+
+            </tr>
+            <tr>
+                <td>11</td>
+
+            </tr>
+            <tr>
+                <td>12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="cl">컴구</td>
+                <td class="cl">컴구</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td rowspan="5"></td>
+                <td></td>
+                <td rowspan="3" class="cl">OS</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td rowspan="2" class="cl">한글인</td>
+                <td rowspan="3" class="cl">웹시프</td>
+            </tr>
+            <tr>
+                <td>16</td>
+
+            </tr>
+            <tr>
+                <td>17</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+
+            </tr>
+            <tr>
+                <td>18</td>
+                <td></td>
+            </tr>
+        </table>
+    </fieldset>
+    </div>
+    
+</body>
+</html>
