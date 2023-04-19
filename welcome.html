@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyejin's world</title>
+    <style>
+        #title{
+            /* text-align: center; */
+            display:flex;
+            justify-content:center;
+            font-family:"Verdana","Times New Roman",non-serif;
+            color:rgb(234, 77, 71);
+        }
+        .backg{
+            
+            background-image:url('pas.jpeg');
+            background-repeat: no-repeat;
+            background-size:100%;
+            margin-top:0px;
+
+            background-color: white;
+            width:100vw;
+            height:500px;
+            background-blend-mode: hard-light;
+        }
+        nav{
+            float:left;
+            position:absolute;
+            left:20%;
+        }
+        body{
+            padding:0;
+            margin:0;
+            display:flex;
+            justify-content: center;
+
+        }
+        .a{
+            margin-bottom:0;
+            list-style:none;
+            text-align:center;
+            border-top:1px solid palevioletred;
+            border-bottom:1px solid palevioletred;
+            padding:10px 0;
+        }
+        .a li{
+            text-transform:uppercase;
+            padding:0 10px;  
+            display:inline;
+            letter-spacing:10px;
+        }
+        .a li a{
+            text-decoration: none;
+            color:black;
+        }
+        .a li a:hover{
+            text-decoration: underline;
+            text-decoration-color: pink;
+        }
+        .b {
+            padding-left:20px;
+            padding-top:00px;
+            list-style:none;
+        
+        }
+        .b li{
+            box-sizing: border-box;
+            text-align: center;
+            border:1px solid rgb(211, 80, 124);
+            width:150px;
+            background-color:palevioletred;
+            padding:3px
+        }
+        .b li a{
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+            padding: 0 0 0 10px;
+            font-size:80%;
+        }
+        .b li:hover{
+            background-color: rgb(255, 255, 128);
+        }
+    </style>
+</head>
+<body>
+    <div style="color:black; text-align:center;">
+    <header>
+        <h1 id="title">Welcome To My World!</h1>
+    </header>
+    <div>
+        <ul class="a">
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Codes</a></li>
+        </ul>
+    </div>
+    <div class="backg">
+    <nav>
+        <ul class="b">
+            <caption style="text-align:center;">Midterm Practice</caption>
+            <li><a href="practice1.html">P1</a></li>
+            <li><a href="practice2.html">P2</a></li>
+            <li><a href="practice3.html">P3</a></li>
+            <li><a href="practice4.html">P4</a></li>
+            <li><a href="practice5.html">P5</a></li>
+            <!-- <li><a href="#">가구/인테리어</a></li>
+            <li><a href="#">식품</a></li> -->
+        </ul>
+    </nav>
+</div>
+</div>
+</body>
+</html>
