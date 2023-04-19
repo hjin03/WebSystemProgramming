@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyejin's world</title>
+    <style>
+        #title{
+            /* text-align: center; */
+            display:flex;
+            justify-content:center;
+            font-family:"Verdana","Times New Roman",non-serif;
+            color:rgb(234, 77, 71);
+        }
+
+        body{
+            
+            padding:0;
+            margin:0;
+        }
+        #un{
+            display:flex;
+            justify-content: center;
+        }
+        .a{
+            margin-bottom:0;
+            list-style:none;
+            text-align:center;
+            border-top:1px solid palevioletred;
+            border-bottom:1px solid palevioletred;
+            padding:10px 0;
+        }
+        .a li{
+            text-transform:uppercase;
+            padding:0 10px;  
+            display:inline;
+            letter-spacing:10px;
+        }
+        .a li a{
+            text-decoration: none;
+            color:black;
+        }
+        .a li a:hover{
+            text-decoration: underline;
+            text-decoration-color: pink;
+        }
+
+        label{
+            display:inline-block;
+            width:100px;
+            text-align: right;
+        }
+        input[type=submit]{
+            margin-left:110px;
+        }
+
+        input{
+            background-color: white;
+            margin-bottom: 2px;
+            border:1px solid black;
+        }
+        input:hover,textarea:hover {
+            background-color: pink;
+        }
+        input:focus,textarea:focus {
+            background-color: pink;
+        }
+        #mail{
+            display:flex;
+            justify-content: center;
+            background-color: white;
+            margin-left:50px;
+            margin-top:50px;
+            padding:20px;
+            border:1px solid pink;
+            width:600px;
+        }
+        #box{
+            display:flex;
+            justify-content:center;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome To My World!</h1>
+    </header>
+    <div >
+        
+        <ul class="a">
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Codes</a></li>
+        </ul>
+    </div >
+    <div id="un">
+    <div id="mail">
+        <div id="box">
+            <div>
+        <h2>이메일 전송 화면</h2>
+        <form action="mailto:cats55655@naver.com" method="post" enctype="text/plain">
+            <label for="name">이름 : </label>
+            <input type="text" name="name" id="name" value="" placeholder="영어로 입력해주세요."><br>
+            <label for="email">이메일 주소 : </label>
+            <input type="email" name="email"><br>
+            <label for="comment">내용 :<br></label>
+            <textarea name="comment" rows="5" cols="50" placeholder="영어로 입력해주세요."></textarea> <br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
