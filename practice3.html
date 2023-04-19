@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyejin's world</title>
+    <style>
+        #main{
+            display:flex;
+            justify-content: center;
+        }
+        *{
+            
+        }
+        #title{
+            /* text-align: center; */
+            display:flex;
+            justify-content:center;
+            font-family:"Verdana","Times New Roman",non-serif;
+            color:rgb(234, 77, 71);
+        }
+        body{
+            padding:0;
+            margin:0;
+        }
+        .a{
+            margin-left:10px;
+            margin-right:10px;
+            margin-bottom:0;
+            list-style:none;
+            text-align:center;
+            border-top:1px solid palevioletred;
+            border-bottom:1px solid palevioletred;
+            padding:10px 0;
+        }
+        .a li{
+            text-transform:uppercase;
+            padding:0 10px;  
+            display:inline;
+            letter-spacing:10px;
+        }
+        .a li a{
+            text-decoration: none;
+            color:black;
+        }
+        .a li a:hover{
+            text-decoration: underline;
+            text-decoration-color: pink;
+        }
+        .b{
+            list-style: none;
+        }
+        .b {
+            float:left;
+            width:200px;
+            font-weight: bold;
+        }
+
+        .b li{
+            background-color: rgb(208, 253, 208);
+            width:200px;
+            line-height: 30px;
+            height:30px;
+            border: 1px solid rgb(134, 206, 134);
+            padding-left:10px;
+            box-sizing: border-box;
+            font-weight: lighter;
+            font-size:15px;
+            letter-spacing: 1px;
+        }
+
+        .b a{
+            text-decoration:none;
+            color:rgb(49, 49, 49);
+        }
+
+        .b{
+            
+            margin-left:5px;
+            padding:0;
+        }
+
+        #bx{
+            padding:5px;
+            margin-top:37px;
+            float:left;
+            width:400px;
+            height:250px;
+            border-left : 3px solid gray;
+            border-top : 3px solid gray;
+        }
+        #bx1{
+            float:left;
+            width:180px;
+            
+            border : 1px solid red;
+        }
+        #bx2{
+            float:left;
+            width:180px;
+            border : 1px solid blue;
+        }
+        #rd{
+            width:200px;
+            float: left;
+        }
+        .b li:hover{
+            background-color: pink;
+        }
+        #d2 p{
+            margin:0;
+            padding:0;
+        }
+        h4{
+            margin-bottom: 0;
+        }
+        
+    </style>
+        
+    <script>
+        let it1=0;
+        let it2=0;
+        function i1(){
+            it1++;
+        }
+        function i2(){
+            it2++;
+        }
+        function cart(){
+            document.getElementById('ppp').innerHTML="item 1 : "+it1+"<br>item 2 : "+it2;
+        }
+
+        
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome To My World!<br>Mini Web Shop</h1>
+    </header>
+    <div>
+        <ul class="a">
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </div>
+    <div id="main">
+
+    <div>
+        <ul class="b">
+            <caption>카테고리</caption>
+            <li><a href="#">컴퓨터</a></li>
+            <li><a href="#">의류</a></li>
+            <li><a href="#">음악</a></li>
+            <li><a href="#">영화</a></li>
+            <li><a href="#">스포츠/레저</a></li>
+            <li><a href="#">가구/인테리어</a></li>
+            <li><a href="#">식품</a></li>
+        </ul>
+        
+    </div>
+    <div id="bx">
+        <div id="bx1">
+            <img src="">
+            심플하고 슬림한 본체에 코어 i5 3470과 지포스 GT630을 장착 
+            CPU 인텔 코어 i5 3470 (아이브릿지 3세대) 사용
+            <br>가격 : 1,200,000월
+            <input onclick="i1()" type="button" value="쇼핑카트에 추가하기">
+        </div>
+        <div id="bx2">
+            <img src="">
+            심플하고 슬림한 본체에 코어 i5 3470과 지포스 GT630을 장착 
+            CPU 인텔 코어 i5 3470 (아이브릿지 3세대) 사용
+            <br>가격 : 1,200,000월
+            <input onclick="i2()" id="i2" type="button" value="쇼핑카트에 추가하기">
+        </div>
+    </div>
+    <div id="rd">
+        <div id="d1">
+            <h4>Shopping Cart</h4>
+            <p id="ppp">현재 쇼핑카트에 물품이 없습니다.</p>
+            <button onclick="cart()" href="">쇼핑카트 보기</button>
+            <p ></p>
+        </div>
+        <div id="d2">
+            <h4>Log In</h4>
+            <p>아이디</p>
+            <input type="text">
+            <p>패스워드</p>
+            <input type="password"><br>
+            <input type="button" value="로그인">
+            <input type="reset" value="초기화"><br>
+            <a href="">회원가입</a> <a href="">비밀번호분실</a>
+        </div>
+    </div>
+    <div>
+</body>
+</html>
