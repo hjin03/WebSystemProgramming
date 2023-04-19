@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyejin's world</title>
+    <style>
+        #title{
+            /* text-align: center; */
+            display:flex;
+            justify-content:center;
+            font-family:"Verdana","Times New Roman",non-serif;
+            color:rgb(234, 77, 71);
+        }
+        body{
+            padding:0;
+            margin:0;
+        }
+        .a{
+            background-color: rgb(255, 244, 246);
+
+            margin-bottom:0;
+            list-style:none;
+            text-align:center;
+            border-top:1px solid palevioletred;
+            border-bottom:1px solid palevioletred;
+            padding:10px 0;
+        }
+        .a li{
+            text-transform:uppercase;
+            padding:0 10px;  
+            display:inline;
+            letter-spacing:10px;
+        }
+        .a li a{
+            text-decoration: none;
+            color:black;
+        }
+        .a li a:hover{
+            text-decoration: underline;
+            text-decoration-color: pink;
+        }
+        #color1{
+            width:100%;
+            height:500px;
+            background-color: white;
+            border:1px solid pink;
+            display:flex;
+            justify-content: center;
+
+        }
+        #color2{
+            width:100%;
+            height:500px;
+            background-color: white;
+            border:1px solid pink;
+            display:flex;
+            justify-content: center;
+            margin-top:20px;
+            margin-bottom:20px;
+        }
+
+        button{
+            margin:10px;
+            background-color: white;
+            border:1px solid salmon;
+
+        }
+        #color1 label{
+            display:inline-block;
+            width:100px;
+            text-align:right;
+            
+        }
+
+        #ddd h3{
+            text-align: center;
+            height:50px;
+        }
+        .s{
+            position:absolute;
+            top:330px;
+            display:block;
+            width:600px;
+            height:330px;
+            background-image: url('임시배경.png');
+            background-repeat: no-repeat;
+            background-size: 90%;
+
+        }
+        #snake{
+            position:relative;
+            top:70px;
+            right:120px;
+        }
+    </style>
+    <script>
+        function back(){
+            
+        let x=Math.floor(Math.random()*256);
+        let y=Math.floor(Math.random()*256);
+        let z=Math.floor(Math.random()*256);
+
+        document.body.style.background="rgb("+x+","+y+","+z;+")";
+    }
+
+    function replay()   {  
+            cnt=0
+            document.getElementById("guess").value=-1;
+            document.getElementById("count").value=0;
+            document.getElementById("res").value="다시 시작합시다.";
+        
+        }
+            let guess=-1;
+            let cnt=0;
+            let ans = 25;
+            let idx=1;
+        function play(){
+            
+            if(idx)
+                {
+                    guess = parseInt(document.getElementById('guess').value);
+
+                    let msg;
+
+                    cnt ++;
+                    if (guess<ans){
+                        msg="추측한 숫자가 더 작습니다.";
+                    }
+                    else {
+                        if (guess>ans){
+                            msg="추측한 숫자가 더 큽니다.";
+                        }
+                        else{
+                            msg="맞았습니다!!!!!";
+                            idx=0;
+                        }
+                    }
+                    document.getElementById("res").value=msg;
+
+                }
+                else{
+                    msg="이미 맞았습니다~~";
+                    document.getElementById("res").value=msg;
+
+                }
+                document.getElementById("count").value=cnt;
+            }
+            function lastg(){
+                let num=parseInt(prompt('몇 명이 게임에 참여하나요?'));
+                // alert(num);
+                let check=confirm(num+'명이 맞나요?');
+
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome To My World!</h1>
+    </header>
+    <div>
+        <ul class="a">
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Codes</a></li>
+        </ul>
+    </div>
+    <button type="button" id="btn" onclick="back()">배경색상 변경</button>
+        <br>
+    <div id="color1">
+        <div id="ddd">
+            <h3> Game 1 - 수를 찾아보자~!</h3>
+            <label for="guess">추측한 숫자 : </label>
+            <input type="" id="guess"> 
+            <input type="button" onclick="play()" value="정답일까요?">
+            <input type="button" onclick="replay()" value="reset">
+            <br>
+            <label for="count">시도 횟수 : </label>
+            <input type="" id="count"> <br>
+            <label for="res">결과 : </label>
+            <input type="text" id="res"> 
+        </div>
+        <div class="s">
+        </div>
+    </div>
+
+    <div id="color2">
+        <h3 style="height:50px;"> Game 2 - 끝말잇기 게임 </h3>
+
+        <input type="button" id="snake" onclick="lastg()" value="START" style="height:50px; display:block;">
+    </div>
+
+</body>
+</html>
